@@ -1,0 +1,833 @@
+@charset "UTF-8";
+
+/* spnaで囲んだところの色変えのみ */
+h3 span {
+    color: #E8204E;
+}
+
+/* タイトル */
+.title {
+    position: relative;
+    /* 相対配置 */
+}
+
+/* タイトル文字 */
+.title p {
+    position: absolute;
+    /* 絶対配置 */
+    color: white;
+    top: 60%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: sans-serif;
+    /* translateで文字分のズレを補正 */
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 21rem;
+    text-align: center;
+}
+
+/* タイトル画像 */
+.title img {
+    background-image: url(img/start_background-image.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 画像を歪ませず、領域全体を覆うようにトリミング */
+    object-position: center;
+}
+
+/* 親ポイント */
+.MetaDescription {
+    font-size: .75rem;
+    text-align: center;
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+/* 選び方のポイント */
+.box {
+    text-align: center;
+    width: 150px;
+    background-color: #E8204E;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* 子要素に入れる横線 */
+.pointWrapper::before {
+    content: "";
+    width: 95%;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* 子要素に入れる縦線 */
+.pointWrapper::after {
+    content: "";
+    width: 1px;
+    height: 94%;
+    background-color: #000000;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 50%;
+    top: 50%;
+}
+
+/* pointの親divクラス */
+.pointWrapper {
+    width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+/* ポイント一覧 */
+.point span {
+    color: #E8204E;
+    font-size: 1.5rem;
+}
+
+/* 子要素ポイント一覧 */
+.point {
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    height: 30rem;
+}
+
+.point h3 {
+    height: 7rem;
+}
+
+/* 3種類の文のやつ */
+.type3 {
+    /* 文字数と一緒になる */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    position: relative;
+    margin-bottom: 30px;
+    width: 13rem;
+}
+
+/* あしらい */
+.type3 img {
+    right: -17px;
+    top: 40px;
+    position: absolute;
+
+}
+
+/* 種類type */
+.type {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* かっこで囲うやつの左側 */
+.type::before {
+    content: "";
+    background-image: url(img/left.png);
+    width: 20px;
+    height: 122px;
+    display: block;
+    background-repeat: no-repeat;
+    transform: scale(1.2);
+    margin-top: 13px;
+}
+
+/* 右側 */
+.type::after {
+    content: "";
+    background-image: url(img/right.png);
+    width: 20px;
+    height: 122px;
+    display: block;
+    background-repeat: no-repeat;
+    transform: scale(1.2);
+    margin-top: 13px;
+}
+
+/* pを囲っているdiv */
+.type div {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* divで囲われた文字の設定 */
+.type div p {
+    margin: 10px;
+    font-size: 1.25rem;
+}
+
+/* ヘッドヘビー */
+.headheavy {
+    position: relative;
+}
+
+/* ヘッドヘビーの文字 */
+.headheavy p {
+    position: absolute;
+    /* 絶対配置 */
+    color: white;
+    top: 32%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: sans-serif;
+    /* translateで文字分のズレを補正 */
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 12rem;
+}
+
+/* ヘッドヘビーの画像 */
+.headheavy img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* h3タグの調整 */
+.headheavy h3 {
+    margin-top: 75px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.even {
+    position: relative;
+}
+
+/* ヘッドヘビーの文字 */
+.even p {
+    position: absolute;
+    /* 絶対配置 */
+    color: white;
+    top: 32%;
+    left: 61%;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: sans-serif;
+    /* translateで文字分のズレを補正 */
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 12rem;
+}
+
+/* ヘッドヘビーの画像 */
+.even img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* h3タグの調整 */
+.even h3 {
+    margin-top: 75px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* アストロクスの親要素 */
+.astrox {
+    margin: 1rem;
+}
+
+/* アストロクス33h3の要素の横に入れた縦線 */
+.astrox h3 {
+    border-left: #008D55 solid 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* アストロクス33の画像 */
+.astrox img {
+    width: 35%;
+}
+
+/* アストロクス33pの要素 */
+.astx {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+/* アストロクスの文字 */
+.astx p {
+    line-height: 1.75rem;
+}
+
+/* アストロクスdivで囲われた中のp文字 */
+.astroxdiv p {
+    margin: 1rem;
+}
+
+/* 最後の画像のところ */
+.koto {
+    position: relative;
+}
+
+/* 画像の中の文字 */
+.koto p {
+    position: absolute;
+    /* 絶対配置 */
+    color: white;
+    top: 53%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    /* translateで文字分のズレを補正 */
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 21rem;
+    text-align: center;
+}
+
+/* 画像の大きさ */
+.koto img {
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 画像を歪ませず、領域全体を覆うようにトリミング */
+    object-position: center;
+}
+
+.footter {
+    text-align: center;
+    margin: 1rem;
+}
+
+.link ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.link {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top {
+    text-align: center;
+}
+
+.small {
+    text-align: center;
+}
+
+#bar {
+    background-color: #F9C1CF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+}
+
+article {
+    max-width: 1270px;
+    margin: auto;
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+h2 {
+    margin: 2rem 0 1rem;
+}
+
+.type2 p{
+    text-align: center;    
+}
+
+.button{
+    text-align: center;
+}
+@media(min-width:1080px) {
+
+    /* spnaで囲んだところの色変えのみ */
+    h3 span {
+        color: #E8204E;
+    }
+
+    /* タイトル */
+    .title {
+        position: relative;
+        /* 相対配置 */
+    }
+
+    /* タイトル文字 */
+    .title p {
+        position: absolute;
+        /* 絶対配置 */
+        color: white;
+        top: 45%;
+        left: 50%;
+        font-weight: bold;
+        font-size: 4.1rem;
+        font-family: sans-serif;
+        /* translateで文字分のズレを補正 */
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        width: 75rem;
+        text-align: center;
+    }
+
+    /* タイトル画像 */
+    .title img {
+        background-image: url(img/start_background-image.jpg);
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* 画像を歪ませず、領域全体を覆うようにトリミング */
+        object-position: center;
+    }
+
+    /* 親ポイント */
+    .MetaDescription {
+        font-size: 2rem;
+        text-align: center;
+        width: 70rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* 選び方のポイント */
+    .box {
+        text-align: center;
+        width: 19rem;
+        background-color: #E8204E;
+        border-radius: 20px;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    /* 子要素に入れる横線 */
+    .pointWrapper::before {
+        content: "";
+        width: 95%;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    /* 子要素に入れる縦線 */
+    .pointWrapper::after {
+        content: "";
+        width: 1px;
+        height: 94%;
+        background-color: #000000;
+        position: absolute;
+        transform: translateY(-50%);
+        left: 50%;
+        top: 50%;
+    }
+
+    /* pointの親divクラス */
+    .pointWrapper {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        font-size: 1.5rem;
+    }
+
+    /* ポイント一覧 */
+    .point span {
+        color: #E8204E;
+        font-size: 2rem;
+    }
+
+    /* 子要素ポイント一覧 */
+    .point {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5rem;
+
+    }
+
+    /* 3種類の文のやつ */
+    .type3 {
+        /* 文字数と一緒になる */
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        position: relative;
+        margin-bottom: 30px;
+        width: 56rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    /* あしらい */
+    .type3 img {
+        right: 177px;
+        top: 65px;
+        position: absolute;
+        transform: scale(1.75);
+    }
+
+    /* 種類type */
+    .type {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* かっこで囲うやつの左側 */
+    .type::before {
+        content: "";
+        background-image: url(img/left.png);
+        width: 20px;
+        height: 122px;
+        display: block;
+        background-repeat: no-repeat;
+        transform: scale(2);
+        margin-top: 52px;
+    }
+
+    /* 右側 */
+    .type::after {
+        content: "";
+        background-image: url(img/right.png);
+        width: 20px;
+        height: 122px;
+        display: block;
+        background-repeat: no-repeat;
+        transform: scale(2);
+        margin-top: 52px;
+    }
+
+    /* pを囲っているdiv */
+    .type div {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /* divで囲われた文字の設定 */
+    .type div p {
+        margin: 3px;
+        font-size: 2.5rem;
+    }
+
+    .type2 {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* かっこで囲うやつの左側 */
+    .type2::before {
+        content: "";
+        background-image: url(img/left.png);
+        width: 20px;
+        height: 122px;
+        display: block;
+        background-repeat: no-repeat;
+        transform: scale(2);
+        margin-top: 52px;
+    }
+
+    /* 右側 */
+    .type2::after {
+        content: "";
+        background-image: url(img/right.png);
+        width: 20px;
+        height: 122px;
+        display: block;
+        background-repeat: no-repeat;
+        transform: scale(2);
+        margin-top: 52px;
+    }
+
+    /* pを囲っているdiv */
+    .type2 div {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .type2 div p{
+        margin: 30px;
+        font-size: 2.5rem;
+    }
+
+    /* ヘッドヘビー */
+    .headheavy {
+        position: relative;
+        margin-top: 5rem;
+    }
+
+    /* ヘッドヘビーの文字 */
+    .headheavy p {
+        position: absolute;
+        /* 絶対配置 */
+        color: white;
+        top: 35%;
+        left: 50%;
+        font-weight: bold;
+        font-size: 5rem;
+        font-family: sans-serif;
+        /* translateで文字分のズレを補正 */
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        width: 30rem;
+    }
+
+    /* ヘッドヘビーの画像 */
+    .headheavy img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /* h3タグの調整 */
+    .headheavy h3 {
+        margin-top: 75px;
+        margin-bottom: 60px;
+        text-align: center;
+        width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.25rem;
+    }
+
+    /* イーブン */
+    .even {
+        position: relative;
+        margin-top: 5rem;
+    }
+
+    /* イーブンの文字 */
+    .even p {
+        position: absolute;
+        /* 絶対配置 */
+        color: white;
+        top: 35%;
+        left: 55%;
+        font-weight: bold;
+        font-size: 5rem;
+        font-family: sans-serif;
+        /* translateで文字分のズレを補正 */
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        width: 24rem;
+    }
+
+    /* イーブンの画像 */
+    .even img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /* h3タグの調整 */
+    .even h3 {
+        margin-top: 75px;
+        margin-bottom: 60px;
+        text-align: center;
+        width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.25rem;
+    }
+
+    .flex {
+        display: flex;
+        gap: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+    }
+
+    /* アストロクスの親要素 */
+    .astrox {
+        margin: 1rem;
+    }
+
+    /* アストロクス33h3の要素の横に入れた縦線 */
+    .astrox h3 {
+        border-left: #008D55 solid 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /* アストロクス33の画像 */
+    .astrox img {
+        width: 45%;
+        height: 495px;
+    }
+
+    /* アストロクス33pの要素 */
+    .astx {
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    /* アストロクスの文字 */
+    .astx p {
+        line-height: 1.75rem;
+    }
+
+    /* アストロクスdivで囲われた中のp文字 */
+    .astroxdiv p {
+        margin: 0rem;
+        font-size: 2rem;
+        height: 9rem;
+        line-height: 45px;
+    }
+
+    /* 最後の画像のところ */
+    .koto {
+        position: relative;
+        margin-top: 5rem;
+    }
+
+    /* 画像の中の文字 */
+    .koto p {
+        position: absolute;
+        /* 絶対配置 */
+        color: white;
+        top: 53%;
+        left: 50%;
+        font-weight: bold;
+        font-size: 3rem;
+        font-family: sans-serif;
+        /* translateで文字分のズレを補正 */
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        width: 60rem;
+        text-align: center;
+    }
+
+    /* 画像の大きさ */
+    .koto img {
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* 画像を歪ませず、領域全体を覆うようにトリミング */
+        object-position: center;
+    }
+
+    /* フッター */
+    .footter {
+        text-align: center;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    /* リンクの位置 */
+    .link ul {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    .top {
+        text-align: center;
+    }
+
+    /* コピーライト */
+    .small {
+        text-align: center;
+    }
+
+    #bar {
+        background-color: #F9C1CF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 10px;
+    }
+
+    article {
+        max-width: 1270px;
+        margin: auto;
+        padding: 2rem;
+        line-height: 1.8;
+    }
+
+    h2 {
+        margin: 2rem 0 1rem;
+    }
+
+    .button{
+        text-align: center;
+    }
+
+
+}
