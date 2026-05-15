@@ -81,7 +81,7 @@ h3 span {
 .pointWrapper::after {
     content: "";
     width: 1px;
-    height: 94%;
+    height: 98%;
     background-color: #000000;
     position: absolute;
     transform: translateY(-50%);
@@ -115,7 +115,7 @@ h3 span {
 }
 
 .point h3 {
-    height: 7rem;
+    height: 9rem;
 }
 
 /* 3種類の文のやつ */
@@ -372,7 +372,7 @@ article {
     max-width: 1270px;
     margin: auto;
     padding: 2rem;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 h2 {
